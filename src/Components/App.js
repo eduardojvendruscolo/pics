@@ -2,7 +2,6 @@ import React from "react";
 import SearchBar from "./SearchBar";
 import unsplash from "../Api/unsplash";
 import ImageList from "./ImageList";
-import { render } from "@testing-library/react";
 
 class App extends React.Component {
   state = { images: [] };
