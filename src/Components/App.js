@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import unsplash from "../Api/unsplash";
-import { render } from "@testing-library/react";
+import ImageList from "./ImageList";
 
 class App extends React.Component {
   state = { images: [] };
@@ -24,6 +24,8 @@ class App extends React.Component {
     return (
       <div className="ui container" style={this.styleVar}>
         <SearchBar onSubmit={this.onSubmit} />
+
+        <ImageList images={this.state.images} />
 
         <h5
           style={{ backgroundColor: "lightgray" }}
